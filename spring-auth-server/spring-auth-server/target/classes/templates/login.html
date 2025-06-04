@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Login</title></head>
+<body>
+<h2>Login</h2>
+<div th:if="${param.session}">
+    <p style="color:red;">You've been logged out due to session timeout.</p>
+</div>
+<form th:action="@{/login}" method="post">
+    Username: <input type="text" name="username"/><br/>
+    Password: <input type="password" name="password"/><br/>
+    <input type="submit" value="Login"/>
+</form>
+</body>
+</html>

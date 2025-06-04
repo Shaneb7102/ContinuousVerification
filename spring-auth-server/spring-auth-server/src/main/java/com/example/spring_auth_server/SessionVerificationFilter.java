@@ -2,7 +2,6 @@ package com.example.spring_auth_server;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
@@ -26,7 +25,7 @@ public class SessionVerificationFilter implements Filter {
                 long now = System.currentTimeMillis();
                 if (now - loginTime > MAX_SESSION_AGE_MS) {
                     session.invalidate();
-                    ((HttpServletResponse) res).sendRedirect("/login?reauth");
+                    ((HttpServletResponse) res).sendRedirect("/login?session=expired");
                     return;
                 }
             }

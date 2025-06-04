@@ -33,6 +33,9 @@ public class SecurityConfig {
             
             .defaultSuccessUrl("/login-success", true)
             .permitAll()
+        )
+        .sessionManagement(session -> session
+            .invalidSessionUrl("/login?session=invalid")
         );
     return http.build();
 }
