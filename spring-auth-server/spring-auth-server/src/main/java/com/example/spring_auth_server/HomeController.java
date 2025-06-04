@@ -27,7 +27,4 @@ public class HomeController {
     public String secured() {
         return "This is a secured endpoint. You are authenticated.";
     }
-
-
-    
-}
+}    

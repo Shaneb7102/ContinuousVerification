@@ -16,6 +16,7 @@ import org.springframework.security.oauth2.server.authorization.client.Registere
 import org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.session.HttpSessionEventPublisher;
 
 import java.util.UUID;
 
@@ -24,21 +25,21 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-    http
-        .authorizeHttpRequests(auth -> auth
-            .requestMatchers("/", "/login").permitAll()
-            .anyRequest().authenticated()
-        )
-        .formLogin(form -> form
-            
-            .defaultSuccessUrl("/login-success", true)
-            .permitAll()
-        )
-        .sessionManagement(session -> session
-            .invalidSessionUrl("/login?session=invalid")
-        );
-    return http.build();
-}
+        http
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/login").permitAll()
+                .anyRequest().authenticated()
+            )
+            .formLogin(form -> form
+                .defaultSuccessUrl("/login-success", true)
+                .permitAll()
+            )
+            .sessionManagement(session -> session
+                .invalidSessionUrl("/login?session=expired")
+            );
+
+        return http.build();
+    }
 
     @Bean
     public UserDetailsService users() {
@@ -70,7 +71,12 @@ public class SecurityConfig {
     public FilterRegistrationBean<Filter> sessionVerificationFilter() {
         FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new SessionVerificationFilter());
-        registrationBean.addUrlPatterns("/*");
+        registrationBean.addUrlPatterns("/secured/*");
         return registrationBean;
+    }
+
+    @Bean
+    public HttpSessionEventPublisher httpSessionEventPublisher() {
+        return new HttpSessionEventPublisher();
     }
 }
