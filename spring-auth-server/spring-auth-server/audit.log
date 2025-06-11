@@ -1,0 +1,67 @@
+2025-06-11T22:48:44.294769 - Reauthentication triggered for session AB0F87B9D505D137E006DF236548517B: Session timeout
+2025-06-11T22:48:56.227214800 - Active verification methods: ip, freq, time
+2025-06-11T22:56:15.867709300 - Reauthentication triggered for session 6F27073B67554C88232BB6EFA58F4D7F: Session timeout
+2025-06-11T22:57:12.036712200 - Active verification methods: ip, freq, time
+2025-06-11T22:58:08.301809900 - Reauthentication triggered for session F8F1EEDE14B366CC1E0FC54C51608E69: Session timeout
+2025-06-11T22:58:30.341711500 - Active verification methods: ip, freq, time
+2025-06-11T22:58:40.749794200 - Reauthentication triggered for session FF116691576087585155B5817077B3C5: Session timeout
+2025-06-11T23:00:54.261357700 - Active verification methods: ip, freq, time
+2025-06-11T23:00:54.262359400 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:55.724413300 - Active verification methods: ip, freq, time
+2025-06-11T23:00:55.725413800 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:56.188274500 - Active verification methods: ip, freq, time
+2025-06-11T23:00:56.188274500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:56.564356300 - Active verification methods: ip, freq, time
+2025-06-11T23:00:56.564356300 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:56.900676900 - Active verification methods: ip, freq, time
+2025-06-11T23:00:56.900676900 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:57.244418600 - Active verification methods: ip, freq, time
+2025-06-11T23:00:57.244418600 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:57.683727300 - Active verification methods: ip, freq, time
+2025-06-11T23:00:57.684727100 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:57.947728300 - Active verification methods: ip, freq, time
+2025-06-11T23:00:57.948728500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:58.307561200 - Active verification methods: ip, freq, time
+2025-06-11T23:00:58.308560300 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:00:58.523725900 - Active verification methods: ip, freq, time
+2025-06-11T23:00:58.523725900 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:01:00.587241400 - Reauthentication triggered for session 8A6B67C8F668A55FB10E6C4FEE0084AB: Session timeout
+2025-06-11T23:04:38.532374100 - Active verification methods: ip, time, freq
+2025-06-11T23:04:38.533374 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:04:40.803657600 - Active verification methods: ip, time, freq
+2025-06-11T23:04:40.804659500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:06:05.146593900 - Active verification methods: ip, time, freq
+2025-06-11T23:06:05.146593900 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:06:30.521296300 - Reauthentication triggered for session 93234BA9746F077E6059D916C0E01E2A: IP or User-Agent anomaly detected
+2025-06-11T23:07:40.607537500 - Active verification methods: ip, time, freq
+2025-06-11T23:07:40.607537500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:08:10.106027700 - Reauthentication triggered for session 8ABB7DCBC05E125AC8DCFB7ACE5C0D26: IP or User-Agent anomaly detected
+2025-06-11T23:12:58.012604900 - Reauthentication triggered for session 2880F56BD244D0E1108B9A610E9F2BCB: IP or User-Agent anomaly detected
+2025-06-11T23:15:58.703548300 - Reauthentication triggered for session 21E192C36D9BCAEA6BCA17666E8A1015: IP or User-Agent anomaly detected
+2025-06-11T23:22:23.600025100 - Reauthentication triggered for session 85CAF54F5333B1F379E6A823FA9E75B6: IP or User-Agent anomaly detected
+2025-06-11T23:24:55.843186700 - Active verification methods: freq, ip, time
+2025-06-11T23:24:55.844187200 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:57.498035600 - Active verification methods: freq, ip, time
+2025-06-11T23:24:57.498035600 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:58.194524400 - Active verification methods: freq, ip, time
+2025-06-11T23:24:58.194524400 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:58.602034700 - Active verification methods: freq, ip, time
+2025-06-11T23:24:58.602034700 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:58.881506800 - Active verification methods: freq, ip, time
+2025-06-11T23:24:58.882508800 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.065797500 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.065797500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.250170 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.250170 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.433433 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.434434500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.594034600 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.594034600 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.762033900 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.762033900 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.931035500 - Active verification methods: freq, ip, time
+2025-06-11T23:24:59.931035500 - Frequency-Based Verification triggered with risk score: 3
+2025-06-11T23:24:59.931035500 - Time-Based Verification triggered with risk score: 4
+2025-06-11T23:24:59.932036400 - Reauthentication triggered for session 7971E7C6D4750C4979F0EF595F27100E: High risk score: 7
+2025-06-11T23:35:05.353655900 - Active verification methods: freq, time, ip
+2025-06-11T23:35:05.354656500 - Time-Based Verification triggered with risk score: 4

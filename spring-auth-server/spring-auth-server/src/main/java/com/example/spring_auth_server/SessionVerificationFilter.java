@@ -1,12 +1,17 @@
 package com.example.spring_auth_server;
-
+import java.util.logging.Logger;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
-public class SessionVerificationFilter implements Filter {
+class SessionVerificationFilter implements Filter {
 
-    private static final long MAX_SESSION_AGE_MS = 10 * 1000; // 10 seconds
+    private static final long MAX_SESSION_AGE_MS = 500 * 1000;
+    private final RiskScoringService riskScoringService;
+
+    public SessionVerificationFilter(RiskScoringService riskScoringService) {
+        this.riskScoringService = riskScoringService;
+    }
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
@@ -21,32 +26,45 @@ public class SessionVerificationFilter implements Filter {
             String originalIp = (String) session.getAttribute("ip");
             String originalUA = (String) session.getAttribute("ua");
 
-            // Validate IP and UA
             if (originalIp != null && originalUA != null) {
+
+                // Check if IP or User-Agent has changed
+
+                System.out.println("Stored User-Agent: " + originalUA);
+                System.out.println("Request User-Agent: " + request.getHeader("User-Agent"));
+
                 boolean ipChanged = !originalIp.equals(request.getRemoteAddr());
                 boolean uaChanged = !originalUA.equals(request.getHeader("User-Agent"));
 
+                
+
                 if (ipChanged || uaChanged) {
-                    System.out.println("Anomaly detected: IP or User-Agent mismatch. Invalidating session.");
+                    AuditLoggerService.logReauthEvent(session, "IP or User-Agent anomaly detected");
                     session.invalidate();
                     response.sendRedirect("/login?session=anomaly");
                     return;
                 }
             }
 
-            // Timeout verification
             if (loginTime != null) {
                 long now = System.currentTimeMillis();
                 if (now - loginTime > MAX_SESSION_AGE_MS) {
-                    System.out.println("Session for user " + session.getId() + " expired due to timeout.");
+                    AuditLoggerService.logReauthEvent(session, "Session timeout");
                     session.invalidate();
                     response.sendRedirect("/login?session=expired");
                     return;
                 }
+            }
+
+            int riskScore = riskScoringService.evaluateRisk(request, session);
+            if (riskScore > 5) {
+                AuditLoggerService.logReauthEvent(session, "High risk score: " + riskScore);
+                session.invalidate();
+                response.sendRedirect("/login?session=risk");
+                return;
             }
         }
 
         chain.doFilter(req, res);
     }
 }
-

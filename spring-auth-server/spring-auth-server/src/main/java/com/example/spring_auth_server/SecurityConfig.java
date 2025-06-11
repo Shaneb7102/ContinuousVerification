@@ -21,13 +21,13 @@ import org.springframework.security.web.session.HttpSessionEventPublisher;
 import java.util.UUID;
 
 @Configuration
-public class SecurityConfig {
+class SecurityConfig {
 
     @Bean
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/login").permitAll()
+                .requestMatchers("/login", "/reauth").permitAll()
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
@@ -37,7 +37,6 @@ public class SecurityConfig {
             .sessionManagement(session -> session
                 .invalidSessionUrl("/login?session=expired")
             );
-
         return http.build();
     }
 
@@ -63,15 +62,15 @@ public class SecurityConfig {
             .redirectUri("http://localhost:8080/authorized")
             .scope("openid")
             .build();
-
         return new InMemoryRegisteredClientRepository(registeredClient);
     }
 
     @Bean
     public FilterRegistrationBean<Filter> sessionVerificationFilter() {
         FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
-        registrationBean.setFilter(new SessionVerificationFilter());
-        registrationBean.addUrlPatterns("/secured/*");
+        registrationBean.setFilter(new SessionVerificationFilter(new RiskScoringService()));
+        registrationBean.addUrlPatterns("/secured");
+
         return registrationBean;
     }
 

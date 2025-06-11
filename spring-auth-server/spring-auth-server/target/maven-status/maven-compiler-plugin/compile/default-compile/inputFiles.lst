@@ -1,4 +1,10 @@
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\AuditLoggerService.java
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\FrequencyBasedVerification.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\HomeController.java
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\RiskScoringService.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\SecurityConfig.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\SessionVerificationFilter.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\SpringAuthServerApplication.java
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\SuspiciousIpVerification.java
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\TimeBasedVerification.java
+C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\VerificationStrategy.java
