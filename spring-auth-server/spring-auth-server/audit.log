@@ -67,6 +67,7 @@
 2025-06-11T23:35:05.354656500 - Time-Based Verification triggered with risk score: 4
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-06-13T00:44:37.234705200 - Reauthentication triggered for session 1D16B3FEBE85C37CD43E5E5ED765F495: High risk score: 7
 2025-06-13T16:31:42.385123900 - Reauthentication triggered for session 7945F3ACB11D733A80052A7DA89012D3: Policy alert only triggered
 2025-06-13T16:31:48.903801600 - Reauthentication triggered for session 7945F3ACB11D733A80052A7DA89012D3: Policy alert only triggered
@@ -178,6 +179,8 @@
 2025-06-13T17:09:21.242609100 - Reauthentication triggered for session 33E7203E5ECFB0A10DFCB7EA0748FA6D: Policy alert only triggered
 2025-06-13T17:09:21.441549400 - Reauthentication triggered for session 33E7203E5ECFB0A10DFCB7EA0748FA6D: Policy alert only triggered
 2025-06-13T17:09:21.600694500 - Reauthentication triggered for session 33E7203E5ECFB0A10DFCB7EA0748FA6D: Policy alert only triggered
+=======
+>>>>>>> parent of 3aec348 (Track Time for Each Continuous Verification Method)
 =======
 >>>>>>> parent of 3aec348 (Track Time for Each Continuous Verification Method)
 =======
