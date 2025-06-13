@@ -27,7 +27,7 @@ class SecurityConfig {
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/login", "/reauth", "/metrics").permitAll()
+                .requestMatchers("/login", "/reauth").permitAll()
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
@@ -66,19 +66,13 @@ class SecurityConfig {
     }
 
     @Bean
-    public FilterRegistrationBean<Filter> sessionVerificationFilter(RiskScoringService riskScoringService) {
+    public FilterRegistrationBean<Filter> sessionVerificationFilter() {
         FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
-        registrationBean.setFilter(new SessionVerificationFilter(riskScoringService));
+        registrationBean.setFilter(new SessionVerificationFilter(new RiskScoringService()));
         registrationBean.addUrlPatterns("/secured");
+
         return registrationBean;
     }
-
-
-    @Bean
-    public RiskScoringService riskScoringService() {
-        return new RiskScoringService();
-    }
-
 
     @Bean
     public HttpSessionEventPublisher httpSessionEventPublisher() {
