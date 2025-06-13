@@ -33,10 +33,10 @@ class SecurityConfig {
             .formLogin(form -> form
                 .defaultSuccessUrl("/login-success", true)
                 .permitAll()
-            )
-            .sessionManagement(session -> session
-                .invalidSessionUrl("/login?session=expired")
             );
+            // .sessionManagement(session -> session
+            //     .invalidSessionUrl("/login?session=expired")
+            // );
         return http.build();
     }
 

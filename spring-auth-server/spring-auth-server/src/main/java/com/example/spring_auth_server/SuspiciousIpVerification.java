@@ -4,7 +4,7 @@ import jakarta.servlet.http.*;
 
 class SuspiciousIpVerification implements VerificationStrategy {
 
-    private static final java.util.Set<String> suspiciousIps = java.util.Set.of("192.168.1.100", "10.0.0.66");
+    private static final java.util.Set<String> suspiciousIps = java.util.Set.of("192.168.1.100", "10.0.0.66", "127.0.0.1");
 
     @Override
     public int calculateRisk(HttpServletRequest request, HttpSession session) {

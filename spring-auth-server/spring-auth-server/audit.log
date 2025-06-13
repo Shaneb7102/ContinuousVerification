@@ -71,3 +71,7 @@
 2025-06-13T02:13:32.280605600 - Reauthentication triggered for session 305592CF03130AB6209AD592479A38E2: High risk score: 7
 2025-06-13T02:19:33.448406300 - Reauthentication triggered for session FA16660FE5DADE5057D6D74A97103902: High risk score: 7
 2025-06-13T02:21:22.208120200 - Reauthentication triggered for session 0039E7AD50FD72AE425CA30BABBB1C15: High risk score: 7
+2025-06-13T02:28:15.561108700 - Reauthentication triggered for session 86E7164160F93B8777A56E9A53B6A6CB: High risk score: 7
+2025-06-13T02:50:01.915914 - Reauthentication triggered for session 7E9DE5C7E44984257104A7E8E55C388A: Session timeout
+2025-06-13T02:51:05.063806700 - Reauthentication triggered for session 6A5C632741814B609F1E6430A89EFF83: IP or User-Agent anomaly detected
+2025-06-13T02:57:30.131800300 - Reauthentication triggered for session C29DE5CF6CD00162B005C53E38649C0C: High risk score: 9

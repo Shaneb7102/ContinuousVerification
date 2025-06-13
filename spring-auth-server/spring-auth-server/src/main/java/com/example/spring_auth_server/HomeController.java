@@ -60,6 +60,11 @@ class HomeController {
 
     @GetMapping("/login-success")
     public String loginSuccess(HttpServletRequest request, HttpSession session) {
+        if (session.getAttribute("pendingInvalidation") != null) {
+        session.invalidate();
+        return "redirect:/login?session=expired"; // or just force re-login
+    }
+    
         request.changeSessionId();
         session.setAttribute("loginTime", System.currentTimeMillis());
         session.setAttribute("ip", request.getRemoteAddr());
