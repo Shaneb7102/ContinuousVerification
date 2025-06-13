@@ -1,11 +1,8 @@
 package com.example.spring_auth_server;
-
-
-import java.util.logging.Logger;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;
-import com.example.spring_auth_server.PolicyEnforcer;
+
 
 
 class SessionVerificationFilter implements Filter {
