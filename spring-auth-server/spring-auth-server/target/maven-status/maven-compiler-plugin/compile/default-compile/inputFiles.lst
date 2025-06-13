@@ -3,8 +3,11 @@ C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-serv
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\FrequencyBasedVerification.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\HomeController.java
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\MetricsController.java
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\PolicyEnforcer.java
+=======
+>>>>>>> parent of 3aec348 (Track Time for Each Continuous Verification Method)
 =======
 >>>>>>> parent of 3aec348 (Track Time for Each Continuous Verification Method)
 C:\Users\shane\OneDrive\Documents\GitHub\ContinuousVerification\spring-auth-server\spring-auth-server\src\main\java\com\example\spring_auth_server\RiskScoringService.java
