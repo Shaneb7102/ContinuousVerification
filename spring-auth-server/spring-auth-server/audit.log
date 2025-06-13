@@ -66,3 +66,8 @@
 2025-06-11T23:35:05.353655900 - Active verification methods: freq, time, ip
 2025-06-11T23:35:05.354656500 - Time-Based Verification triggered with risk score: 4
 2025-06-13T00:44:37.234705200 - Reauthentication triggered for session 1D16B3FEBE85C37CD43E5E5ED765F495: High risk score: 7
+2025-06-13T02:12:27.473716500 - Reauthentication triggered for session 72C1362512EF97162BA3DA5DCDC0B76E: High risk score: 7
+2025-06-13T02:12:50.100448800 - Reauthentication triggered for session 69C557DDBEC1872FD9AB0A2E8DA0A217: High risk score: 7
+2025-06-13T02:13:32.280605600 - Reauthentication triggered for session 305592CF03130AB6209AD592479A38E2: High risk score: 7
+2025-06-13T02:19:33.448406300 - Reauthentication triggered for session FA16660FE5DADE5057D6D74A97103902: High risk score: 7
+2025-06-13T02:21:22.208120200 - Reauthentication triggered for session 0039E7AD50FD72AE425CA30BABBB1C15: High risk score: 7

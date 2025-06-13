@@ -40,8 +40,9 @@ class SessionVerificationFilter implements Filter {
 
                 if (ipChanged || uaChanged) {
                     AuditLoggerService.logReauthEvent(session, "IP or User-Agent anomaly detected");
-                    session.invalidate();
+                    
                     response.sendRedirect("/login?session=anomaly");
+                    session.invalidate();
                     return;
                 }
             }
@@ -50,8 +51,9 @@ class SessionVerificationFilter implements Filter {
                 long now = System.currentTimeMillis();
                 if (now - loginTime > MAX_SESSION_AGE_MS) {
                     AuditLoggerService.logReauthEvent(session, "Session timeout");
-                    session.invalidate();
+                    
                     response.sendRedirect("/login?session=expired");
+                    session.invalidate();
                     return;
                 }
             }
@@ -59,8 +61,9 @@ class SessionVerificationFilter implements Filter {
             int riskScore = riskScoringService.evaluateRisk(request, session);
             if (riskScore > 5) {
                 AuditLoggerService.logReauthEvent(session, "High risk score: " + riskScore);
-                session.invalidate();
+                
                 response.sendRedirect("/login?session=risk");
+                session.invalidate();
                 return;
             }
         }
