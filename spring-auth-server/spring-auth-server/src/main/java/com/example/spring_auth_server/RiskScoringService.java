@@ -1,9 +1,6 @@
 package com.example.spring_auth_server;
 
 
-import jakarta.servlet.http.HttpServletRequest;
-
-
 import jakarta.servlet.http.*;
 
 class RiskScoringService {
@@ -24,19 +21,19 @@ class RiskScoringService {
 
         int totalRisk = 0;
         for (String methodKey : strategyMap.keySet()) {
-            VerificationStrategy strategy = strategyMap.get(methodKey);
-            if (strategy == null) continue;
+        VerificationStrategy strategy = strategyMap.get(methodKey);
+        if (strategy == null) continue;
 
-            if (activeMethods.contains(methodKey)) {
-                int risk = strategy.calculateRisk(request, session);
-                if (risk > 0) {
-                    AuditLoggerService.log(strategy.getName() + " triggered with risk score: " + risk);
-                }
-                totalRisk += risk;
-            } else {
-                AuditLoggerService.log(strategy.getName() + " skipped");
-            }
+        if (activeMethods.contains(methodKey)) {
+            int risk = strategy.calculateRisk(request, session);
+            System.out.println("[DEBUG] " + strategy.getName() + " returned risk: " + risk);
+            totalRisk += risk;
+        } else {
+            System.out.println("[DEBUG] " + strategy.getName() + " was skipped");
         }
+    }
+
+        System.out.println("[DEBUG] TOTAL RISK SCORE: " + totalRisk);
         return totalRisk;
     }
 }
