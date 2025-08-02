@@ -53,7 +53,7 @@ class SessionVerificationFilter implements Filter {
             }
 
             int riskScore = riskScoringService.evaluateRisk(request, session);
-            if (riskScore > 5) {
+            if (riskScore > 2) {
                 AuditLoggerService.logReauthEvent(session, "High risk score: " + riskScore);
                 session.invalidate();
                 response.sendRedirect("/login?session=risk");
