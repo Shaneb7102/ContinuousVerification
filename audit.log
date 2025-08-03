@@ -173,3 +173,14 @@
 2025-08-02T21:06:45.424107500 - Active verification methods: ip, time, freq
 2025-08-02T21:06:45.560991800 - Active verification methods: ip, time, freq
 2025-08-02T21:06:45.561992400 - Reauthentication triggered for session 494FE9A055FC00DC4204115716FBC566: High risk score: 3
+2025-08-03T16:03:03.634677800 - Active verification methods: ip, time, freq
+2025-08-03T17:08:11.107192900 - Active verification methods: ip, time, freq
+2025-08-03T17:14:34.888735400 - Active verification methods: ip, time, freq
+2025-08-03T19:02:49.789392700 - Active verification methods: freq, time, ip
+2025-08-03T19:02:58.158871700 - Active verification methods: freq, time, ip
+2025-08-03T19:03:00.311202800 - Active verification methods: freq, time, ip
+2025-08-03T19:03:07.349905300 - Active verification methods: freq, time, ip
+2025-08-03T19:03:15.061917500 - Active verification methods: freq, time, ip
+2025-08-03T19:03:31.966492700 - Active verification methods: freq, time, ip
+2025-08-03T19:03:42.638606200 - Active verification methods: freq, time, ip
+2025-08-03T19:03:47.173326800 - Reauthentication triggered for session 6B17C18EED1F748CB3FD204683D302FE: Session timeout

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 class SessionVerificationFilter implements Filter {
 
-    private static final long MAX_SESSION_AGE_MS = 500 * 1000;
+    private static final long MAX_SESSION_AGE_MS = 60 * 1000;
     private final RiskScoringService riskScoringService;
 
     public SessionVerificationFilter(RiskScoringService riskScoringService) {
@@ -53,7 +53,7 @@ class SessionVerificationFilter implements Filter {
             }
 
             int riskScore = riskScoringService.evaluateRisk(request, session);
-            if (riskScore > 2) {
+            if (riskScore > 5) {
                 AuditLoggerService.logReauthEvent(session, "High risk score: " + riskScore);
                 session.invalidate();
                 response.sendRedirect("/login?session=risk");

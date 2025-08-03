@@ -5,7 +5,7 @@ class TimeBasedVerification implements VerificationStrategy {
     @Override
     public int calculateRisk(HttpServletRequest request, HttpSession session) {
         int hour = java.time.LocalDateTime.now().getHour();
-        return (hour < 6 || hour > 22) ? 4 : 0;
+        return (hour < 6 || hour > 12) ? 4 : 0;
     }
 
     @Override
