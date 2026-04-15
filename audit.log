@@ -184,3 +184,56 @@
 2025-08-03T19:03:31.966492700 - Active verification methods: freq, time, ip
 2025-08-03T19:03:42.638606200 - Active verification methods: freq, time, ip
 2025-08-03T19:03:47.173326800 - Reauthentication triggered for session 6B17C18EED1F748CB3FD204683D302FE: Session timeout
+2025-08-17T21:02:57.873569100 - Active verification methods: freq, ip, time
+2025-08-21T18:48:51.193623500 - Active verification methods: ip, freq, time
+2025-08-21T18:49:45.510997100 - Active verification methods: ip, freq, time
+2025-08-21T18:49:49.508926600 - Active verification methods: ip, freq, time
+2025-08-21T18:49:49.780317100 - Active verification methods: ip, freq, time
+2025-08-21T18:49:50.052896500 - Active verification methods: ip, freq, time
+2025-08-21T18:49:50.291893700 - Active verification methods: ip, freq, time
+2025-08-21T18:49:50.588728 - Active verification methods: ip, freq, time
+2025-08-21T18:49:50.859853900 - Active verification methods: ip, freq, time
+2025-08-21T18:49:51.116366 - Active verification methods: ip, freq, time
+2025-08-21T18:49:51.371967400 - Active verification methods: ip, freq, time
+2025-08-21T18:49:51.644876800 - Active verification methods: ip, freq, time
+2025-08-21T18:49:51.884224200 - Active verification methods: ip, freq, time
+2025-08-21T18:49:51.885224800 - Reauthentication triggered for session 0095691526695975690CDA4C9490CC88: High risk score: 7
+2025-08-21T18:55:36.792099200 - Reauthentication triggered for session C9098487FE1675811BE6B33088F9A3BA: Session timeout
+2025-08-21T18:56:46.706049900 - Active verification methods: ip, freq, time
+2025-08-24T13:54:38.259877400 - Reauthentication triggered for session DC14C2C10DCB4BA94056C06599A8369C: Session timeout
+2025-08-24T13:54:52.899800800 - Active verification methods: ip, freq, time
+2025-08-24T13:54:59.023834200 - Active verification methods: ip, freq, time
+2025-08-24T13:54:59.278182100 - Active verification methods: ip, freq, time
+2025-08-24T13:54:59.550648700 - Active verification methods: ip, freq, time
+2025-08-24T13:54:59.870644200 - Active verification methods: ip, freq, time
+2025-08-24T13:55:00.174640900 - Active verification methods: ip, freq, time
+2025-08-24T13:55:00.534636400 - Active verification methods: ip, freq, time
+2025-08-24T13:55:00.854631400 - Active verification methods: ip, freq, time
+2025-08-24T13:55:01.150627300 - Active verification methods: ip, freq, time
+2025-08-24T13:55:01.422504500 - Active verification methods: ip, freq, time
+2025-08-24T13:55:01.702234300 - Active verification methods: ip, freq, time
+2025-08-24T13:55:01.703234900 - Reauthentication triggered for session D2533AC88DFA533DB8BE1C1804A8EFC6: High risk score: 7
+2025-08-24T17:47:02.726384900 - Active verification methods: freq, ip, time
+2025-08-24T17:47:11.567776700 - Active verification methods: freq, ip, time
+2025-08-24T17:47:12.056229200 - Active verification methods: freq, ip, time
+2025-08-24T17:47:12.432352 - Active verification methods: freq, ip, time
+2025-08-24T17:47:12.744446400 - Active verification methods: freq, ip, time
+2025-08-24T17:47:13.064738 - Active verification methods: freq, ip, time
+2025-08-24T17:47:13.385029200 - Active verification methods: freq, ip, time
+2025-08-24T17:47:13.720823900 - Active verification methods: freq, ip, time
+2025-08-24T17:47:14.056205100 - Active verification methods: freq, ip, time
+2025-08-24T17:47:14.392011700 - Active verification methods: freq, ip, time
+2025-08-24T17:47:14.704197300 - Active verification methods: freq, ip, time
+2025-08-24T17:47:14.705197300 - Reauthentication triggered for session BD2D87909FD752F62E2DBF9870FCC1CE: High risk score: 7
+2025-08-24T18:19:41.017286 - Active verification methods: time, freq, ip
+2025-08-24T18:19:44.831875600 - Active verification methods: time, freq, ip
+2025-08-24T18:19:45.440220600 - Active verification methods: time, freq, ip
+2025-08-24T18:19:45.999215300 - Active verification methods: time, freq, ip
+2025-08-24T18:19:46.575228200 - Active verification methods: time, freq, ip
+2025-08-24T18:19:47.167677200 - Active verification methods: time, freq, ip
+2025-08-24T18:19:47.807671500 - Active verification methods: time, freq, ip
+2025-08-24T18:19:48.407682600 - Active verification methods: time, freq, ip
+2025-08-24T18:19:49.223631500 - Active verification methods: time, freq, ip
+2025-08-24T18:19:49.808194200 - Active verification methods: time, freq, ip
+2025-08-24T18:19:50.311630200 - Active verification methods: time, freq, ip
+2025-08-24T18:19:50.312631900 - Reauthentication triggered for session 47A2A64AED8369EF40999726BEBC2B83: High risk score: 7
